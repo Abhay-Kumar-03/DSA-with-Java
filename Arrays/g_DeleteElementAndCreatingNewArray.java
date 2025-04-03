@@ -15,9 +15,9 @@ public class g_DeleteElementAndCreatingNewArray {
         System.out.print("Enter that element which you want to delete from this array: ");
         int num = input.nextInt();
         int occur = occur(myArr, num);
-        System.out.print(occur);
-        int[] newArray = new int[size - occur];
-        System.out.println(newArray);
+//        System.out.print(occur);
+        newArray(myArr, num);
+
 
     }
 
@@ -33,9 +33,27 @@ public class g_DeleteElementAndCreatingNewArray {
         return count;
     }
 
-    public static int[] newArray(int[] myArr , int num){
+    public static void newArray(int[] myArr , int num){
         int count = occur(myArr, num);
+        if(count == 0)
+            System.out.println(myArr);
+        int newSize = myArr.length - count;
+        int[] newArr = new int[newSize];
 
+        int i = 0, j = 0;
+        while(i < myArr.length){
+            if(myArr[i] != num){
+                newArr[j] = myArr[i];
+                j++;
+            }
+            i++;
+        }
+
+        int index = 0;
+        while(index < newArr.length){
+            System.out.print(newArr[index]);
+            index++;
+        }
     }
 
 }
