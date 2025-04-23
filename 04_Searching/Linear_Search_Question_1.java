@@ -2,7 +2,7 @@
 //--->>>   Leetcode Question 1295
 
 
-public class Linear_Search_Question {
+public class Linear_Search_Question_1 {
     public static void main(String[] args) {
         int[] arr = {12,345,2,6,7896};
         System.out.println(digits(0));

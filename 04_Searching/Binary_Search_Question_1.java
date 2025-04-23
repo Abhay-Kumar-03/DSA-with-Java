@@ -1,6 +1,6 @@
 // -->> Ceiling of a number (find the number which is smallest number greater than  to target number)
 
-public class Binary_Search_Question {
+public class Binary_Search_Question_1 {
     public static void main(String[] args) {
         int[] arr = {2, 3, 5, 9, 14, 16, 18};
         int target = 4;
